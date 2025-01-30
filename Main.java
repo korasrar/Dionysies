@@ -67,9 +67,23 @@ class Main {
 
         Auteur aristophane = new Auteur("Aristophane", 5, citation_thesmophories, 100, citation_guêpes, 0, "");
 
+        Journée lundi = new Journée(Style.TRAGÉDIE, Style.COMÉDIE, Style.DRAME,nombreSpectateur);
+        Journée mardi = new Journée(Style.COMÉDIE, Style.DRAME, Style.TRAGÉDIE);
+        Journée mercredi = new Journée(Style.DRAME, Style.TRAGÉDIE, Style.DRAME);
+
+        Tournoi cup = new Tournoi<(citation_thesmophories)
+
         // Ajoutez vos tests ici
-        
+        assert aristophane.getNom()=="Aristophane";
         assert euripide.getQualiteTragedie()==92;
-        assert euripide.getCitationtragedie()==citation_hécube;
+        assert euripide.getCitationTragedie()==citation_hécube;
+        assert euripide.getCitationComedie()=="";
+        assert euripide.getQualiteComedie()==0;
+        assert euripide.getQualiteDrame()==80;
+        assert euripide.getCitationDrame()==citation_cyclope;
+        assert aristophane.citationStyle(Style.TRAGÉDIE)==citation_thesmophories;
+        assert aristophane.qualiteStyle(Style.TRAGÉDIE)==5;
+
+        
     }
 }

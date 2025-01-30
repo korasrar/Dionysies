@@ -24,7 +24,7 @@ class Auteur {
     this.citation_drame = citation_drame;
   }
 
-  public Style point_fort() {
+  public Style pointFort() {
     if (qualité_tragédie > qualité_comédie) {
       if (qualité_drame > qualité_tragédie) {
         return Style.DRAME;
@@ -66,6 +66,28 @@ class Auteur {
 
   public String getCitationDrame() {
     return this.citation_drame;
+  }
+
+  public int qualiteStyle(Style s) {
+    if (s == Style.TRAGÉDIE)
+      return this.qualité_tragédie;
+    if (s == Style.COMÉDIE)
+      return this.qualité_comédie;
+    if (s == Style.DRAME)
+      return this.qualité_drame;
+    else
+      return 0;
+  }
+
+  public String citationStyle(Style s) {
+    if (s == Style.TRAGÉDIE)
+      return this.citation_tragédie;
+    if (s == Style.COMÉDIE)
+      return this.citation_comédie;
+    if (s == Style.DRAME)
+      return this.citation_drame;
+    else
+      return "";
   }
 
   @Override
