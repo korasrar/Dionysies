@@ -69,9 +69,32 @@ class Main {
 
         // Ajoutez vos tests ici
         
-        assert 2 == 2;
         assert aristophane.getCitationTragédie() == citation_thesmophories;
         assert sophocle.getCitationTragédie() == citation_antigone;
         assert euripide.getCitationTragédie() == citation_hécube;
+
+        assert aristophane.getCitationComédie() == citation_guêpes;
+        assert sophocle.getCitationComédie() == "";
+        assert euripide.getCitationComédie() == "";
+
+        assert aristophane.getCitationDrame() == "";
+        assert sophocle.getCitationDrame() == citation_limiers;
+        assert euripide.getCitationDrame() == citation_cyclope;
+
+        assert aristophane.getScoreTragédie() == 5;
+        assert sophocle.getScoreTragédie() == 95;
+        assert euripide.getScoreTragédie() == 92;
+
+        assert aristophane.getScoreComédie() == 100;
+        assert sophocle.getScoreComédie() == 0;
+        assert euripide.getScoreComédie() == 0;
+
+        assert aristophane.getScoreDrame() == 0;
+        assert sophocle.getScoreDrame() == 60;
+        assert euripide.getScoreDrame() == 80;
+        
+        assert aristophane.point_fort() == Style.COMÉDIE;
+        assert euripide.point_fort() == Style.TRAGÉDIE;
+        assert sophocle.point_fort() == Style.TRAGÉDIE;
     }
 }

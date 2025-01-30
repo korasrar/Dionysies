@@ -47,6 +47,30 @@ class Auteur {
     return this.citation_tragédie;
   }
 
+  public String getCitationComédie(){
+    return this.citation_comédie;
+  }
+
+  public String getCitationDrame(){
+    return this.citation_drame;
+  }
+
+  public int getScoreDrame(){
+    return this.qualité_drame;
+  }
+
+  public int getScoreComédie(){
+    return this.qualité_comédie;
+  }
+
+  public int getScoreTragédie(){
+    return this.qualité_tragédie;
+  }
+
+  public String qualiteStyle(Style s){
+        return "";
+  }
+
   @Override
   public String toString(){
     return "Auteur: "+this.nom +", Qualité de Tragédie: "+this.qualité_tragédie + ", Citation Trajédie "+this.citation_tragédie+", Qualité Comédie "+this.qualité_comédie+", Citation Comédie "+this.citation_comédie+", Qualité Drame "+this.qualité_drame+", Citation Drame "+this.citation_drame;
