@@ -10,14 +10,18 @@ class Journée {
     }
 
     public Style get_matin() {
-	return this.style_matin;
+        return this.style_matin;
     }
     
     public Style get_après_midi() {
-	return this.style_après_midi;
+        return this.style_après_midi;
     }
     
     public Style get_soirée() {
-	return this.style_soirée;
+        return this.style_soirée;
+    }
+
+    public int score() {
+        
     }
 }
