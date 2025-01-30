@@ -48,7 +48,7 @@ public String getCitationDrame() {
   return this.citation_drame;
 }
 
-public String qualitéStyle(Style s) {
+public int qualitéStyle(Style s) {
   if (s = TRAGÉDIE)
     return this.qualité_tragédie;
   if (s = COMÉDIE)
@@ -56,6 +56,16 @@ public String qualitéStyle(Style s) {
   if (s = DRAME)
     return this.qualité_drame;
 }
+
+public String qualitéStyle(Style s) {
+  if (s = TRAGÉDIE)
+    return this.citation_tragédie;
+  if (s = COMÉDIE)
+    return this.citation_comédie;
+  if (s = DRAME)
+    return this.citation_drame;
+}
+
 
   public Style point_fort() {
     if (qualité_tragédie > qualité_comédie) {
