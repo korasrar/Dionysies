@@ -16,13 +16,13 @@ class Auteur {
       String citation_comédie,
       int qualité_drame,
       String citation_drame) {
-    this.nom = nom;
-    this.qualité_tragédie = qualité_tragédie;
-    this.citation_tragédie = citation_tragédie;
-    this.qualité_comédie = qualité_comédie;
-    this.citation_comédie = citation_comédie;
-    this.qualité_drame = qualité_drame;
-    this.citation_drame = citation_drame;
+    this.nom=nom;
+    this.qualité_tragédie=qualité_tragédie;
+    this.citation_tragédie=citation_tragédie;
+    this.qualité_comédie=qualité_comédie;
+    this.citation_comédie=citation_comédie;
+    this.qualité_drame=qualité_drame;
+    this.citation_drame=citation_drame;
   }
 
   public Style point_fort() {
@@ -39,9 +39,5 @@ class Auteur {
         return Style.COMÉDIE;
       }
     }
-  }
-
-  public int getQualiteTragedie() {
-    return this.qualité_tragédie;
   }
 }
