@@ -1,4 +1,5 @@
 class Auteur {
+  String nom;
   String citation_tragédie;
   int qualité_tragédie;
 
@@ -18,6 +19,10 @@ class Auteur {
       String citation_drame) {
     //TODO
   }
+
+public String getNom() {
+  return this.nom;
+}
 
 public int getQualitéTragédie() {
   return this.qualité_tragédie;
@@ -58,4 +63,10 @@ public String getCitationDrame() {
       }
     }
   }
+
+@Override
+public String toString() {
+  return "L'honorable "+this.nom;
+}
+
 }
