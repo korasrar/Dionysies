@@ -19,6 +19,30 @@ class Auteur {
     //TODO
   }
 
+public int getQualitéTragédie() {
+  return this.qualité_tragédie;
+}
+
+public String getCitationTragedie() {
+  return this.citation_tragédie;
+}
+
+public int getQualitéComédie() {
+  return this.qualité_comédie;
+}
+
+public String getCitationComédie() {
+  return this.citation_comédie;
+}
+
+public int getQualitéDrame() {
+  return this.qualité_drame;
+}
+
+public String getCitationDrame() {
+  return this.citation_drame;
+}
+
   public Style point_fort() {
     if (qualité_tragédie > qualité_comédie) {
       if (qualité_drame > qualité_tragédie) {
