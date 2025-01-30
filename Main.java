@@ -13,7 +13,7 @@ class Main {
                 + " collier! A vous voir, vous n'êtes que des outres, des jacasses et des\n"
                 + " viédazes!";
 
-        Auteur sophocle = new Auteur("Sophocle", 95, citation_antigone, 0, "", 60, citation_limiers);
+        Auteur sophocle = new Auteur("Sophocle", 95, "citation_antigone", 0, "", 60, "citation_limiers");
 
         String citation_hécube =
             "et elle, ayant entendu la parole des maîtres, saisissant ses voiles par l'épaule, les\n"
@@ -54,7 +54,7 @@ class Main {
                 + " festin.\n"
                 + " ";
 
-        Auteur euripide = new Auteur("Euripide", 92, citation_hécube, 0, "", 80, citation_cyclope);
+        Auteur euripide = new Auteur("Euripide", 92, "citation_hécube", 0, "", 80, "citation_cyclope");
 
         String citation_guêpes =
             "TRYGÉE : Tiens, voilà quelqu'un qui s'amène avec une couronne de lauriers sur la tête.\n"
@@ -65,10 +65,38 @@ class Main {
         String citation_thesmophories =
             "La fortune a vite fait de changer en mal et de régner sous une autre face.";
 
-        Auteur aristophane = new Auteur("Aristophane", 5, citation_thesmophories, 100, citation_guêpes, 0, "");
+        Auteur aristophane = new Auteur("Aristophane", 5, "citation_thesmophories", 100, "citation_guêpes", 0, "");
 
         // Ajoutez vos tests ici
         
         assert 2 == 2;
+        assert sophocle.getNom() == "Sophocle"
+        assert euripide.getNom() == "Euripide"
+        assert aristophane.getNom() == "Aristophane"
+
+        assert sophocle.getQualitéTragédie() == 95
+        assert euripide.getQualitéTragédie() == 92
+        assert aristophane.getQualitéTragédie() == 5
+
+        assert sophocle.getCitationTragedie() == "citation_antigone"
+        assert euripide.getCitationTragedie() == "citation_hécube"
+        assert aristophane.getCitationTragedie() == "citation_thesmophories"
+
+        assert sophocle.getQualitéComédie() == 0
+        assert euripide.getQualitéComédie() == 0
+        assert aristophane.getQualitéComédie() == 100
+
+        assert sophocle.getCitationComédie() == ""
+        assert euripide.getCitationComédie() == ""
+        assert aristophane.getCitationComédie() == "citation_guêpes"
+
+        assert sophocle.getQualitéDrame() == 60
+        assert euripide.getQualitéDrame() == 80
+        assert aristophane.getQualitéDrame() == 0
+
+        assert sophocle.getCitationDrame() == "citation_limiers"
+        assert euripide.getCitationDrame() == "citation_cyclope"
+        assert aristophane.getCitationDrame() == ""
+
     }
 }
