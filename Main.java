@@ -69,6 +69,7 @@ class Main {
 
         // Ajoutez vos tests ici
         
-        assert 2 == 2;
+        assert euripide.getQualiteTragedie()==92;
+        assert euripide.getCitationtragedie()==citation_hécube;
     }
 }

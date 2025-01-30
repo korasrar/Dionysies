@@ -40,8 +40,32 @@ class Auteur {
     }
   }
 
+  public String getNom() {
+    return this.nom;
+  }
+
   public int getQualiteTragedie() {
     return this.qualité_tragédie;
+  }
+
+  public String getCitationTragedie() {
+    return this.citation_tragédie;
+  }
+
+  public int getQualiteComedie() {
+    return this.qualité_comédie;
+  }
+
+  public String getCitationComedie() {
+    return this.citation_comédie;
+  }
+
+  public int getQualiteDrame() {
+    return this.qualité_drame;
+  }
+
+  public String getCitationDrame() {
+    return this.citation_drame;
   }
 
   @Override
