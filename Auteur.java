@@ -1,4 +1,6 @@
 class Auteur {
+  String nom;
+
   String citation_tragédie;
   int qualité_tragédie;
 
@@ -15,7 +17,7 @@ class Auteur {
       int qualité_comédie,
       String citation_comédie,
       int qualité_drame,
-      String citation_drame) {
+      String citation_drame){
     this.nom=nom;
     this.qualité_tragédie=qualité_tragédie;
     this.citation_tragédie=citation_tragédie;
@@ -39,5 +41,14 @@ class Auteur {
         return Style.COMÉDIE;
       }
     }
+  }
+
+  public String getCitationTragédie(){
+    return this.citation_tragédie;
+  }
+
+  @Override
+  public String toString(){
+    return "Auteur: "+this.nom +", Qualité de Tragédie: "+this.qualité_tragédie + ", Citation Trajédie "+this.citation_tragédie+", Qualité Comédie "+this.qualité_comédie+", Citation Comédie "+this.citation_comédie+", Qualité Drame "+this.qualité_drame+", Citation Drame "+this.citation_drame;
   }
 }

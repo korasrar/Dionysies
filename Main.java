@@ -70,5 +70,8 @@ class Main {
         // Ajoutez vos tests ici
         
         assert 2 == 2;
+        assert aristophane.getCitationTragédie() == citation_thesmophories;
+        assert sophocle.getCitationTragédie() == citation_antigone;
+        assert euripide.getCitationTragédie() == citation_hécube;
     }
 }
