@@ -1,5 +1,4 @@
 import java.util.List;
-
 import dionysies.Tournoi;
 
 class Journée {
@@ -14,10 +13,15 @@ class Journée {
     }
 
     public void ajouteEpreuve(Style styleEpreuve,Periode periode, int nombreSpectateur) {
-        listeEpreuve.add(new Epreuve(styleEpreuve, periode, nombreSpectateur));
+        listeEpreuve.add(new Epreuve(styleEpreuve, nombreSpectateur));
     }
 
-    public int getScoreJourne(Auteur auteur) {
-        for
+    public int scoreJournee(Auteur a) {
+        int res = 0;
+        for (Epreuve epreuve : listeEpreuve)
+        res += epreuve.getNbSpectateurs()*epreuve.scoreAuteur(a);
+        return res;
     }
+
+    
 }

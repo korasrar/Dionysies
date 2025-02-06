@@ -67,15 +67,15 @@ class Main {
 
         Auteur aristophane = new Auteur("Aristophane", 5, citation_thesmophories, 100, citation_guêpes, 0, "");
 
-        Epreuve ep1l = new Epreuve(Style.TRAGÉDIE, Periode.MATIN, 100);
-        Epreuve ep2l = new Epreuve(Style.TRAGÉDIE, Periode.APRESMIDI, 150);
-        Epreuve ep3l = new Epreuve(Style.TRAGÉDIE, Periode.SOIREE, 200);
-        Epreuve ep1ma = new Epreuve(Style.TRAGÉDIE, Periode.MATIN, 200);
-        Epreuve ep2ma = new Epreuve(Style.TRAGÉDIE, Periode.APRESMIDI, 130);
-        Epreuve ep3ma = new Epreuve(Style.TRAGÉDIE, Periode.SOIREE, 190);
-        Epreuve ep1me = new Epreuve(Style.TRAGÉDIE, Periode.MATIN, 140);
-        Epreuve ep2me = new Epreuve(Style.TRAGÉDIE, Periode.APRESMIDI, 130);
-        Epreuve ep3me = new Epreuve(Style.TRAGÉDIE, Periode.SOIREE, 109);
+        Epreuve ep1l = new Epreuve(Style.TRAGÉDIE,  100);
+        Epreuve ep2l = new Epreuve(Style.TRAGÉDIE, 150);
+        Epreuve ep3l = new Epreuve(Style.TRAGÉDIE, 200);
+        Epreuve ep1ma = new Epreuve(Style.TRAGÉDIE,  200);
+        Epreuve ep2ma = new Epreuve(Style.TRAGÉDIE,  130);
+        Epreuve ep3ma = new Epreuve(Style.TRAGÉDIE,  190);
+        Epreuve ep1me = new Epreuve(Style.TRAGÉDIE,  140);
+        Epreuve ep2me = new Epreuve(Style.TRAGÉDIE,  130);
+        Epreuve ep3me = new Epreuve(Style.TRAGÉDIE,  109);
 
         Journée lundi = new Journée();
         Journée mardi = new Journée();
